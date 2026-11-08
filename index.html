@@ -111,11 +111,13 @@
   .hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:56px;align-items:center}
   @media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:44px}}
   .eyebrow{
-    display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px 10px;
+    display:inline-flex;align-items:center;gap:10px;
     font-size:13px;font-weight:700;color:var(--accent);
     background:var(--accent-wash);padding:6px 14px;border-radius:999px;line-height:1.6
   }
   .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
+  .eyebrow .nw{white-space:nowrap}
+  @media(max-width:400px){.eyebrow{font-size:12px;padding:6px 12px;gap:8px}}
   h1{
     font-family:"Shippori Mincho B1","Hiragino Mincho ProN",serif;font-weight:800;
     font-size:clamp(27px,8.6vw,56px);line-height:1.3;letter-spacing:.01em;margin:22px 0 22px
@@ -368,7 +370,7 @@
 <div class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow"><span class="dot"></span>塾・教室・講師のための ショート動画おまかせ運用</span>
+      <span class="eyebrow"><span class="dot"></span><span><span class="nw">塾・教室・講師のための</span> <span class="nw">ショート動画おまかせ運用</span></span></span>
       <h1><span class="nw"><span class="q">「発信しなきゃ」</span>は、</span><br><span class="nw">今日で終わりに。</span></h1>
       <p class="lead">ネタ出し、動画づくり、投稿、数字の振り返り、次の改善。教室のショート動画を、<b>AIと私がまるごと引き受けます。</b>先生がやるのは、<b>月に一度レポートを読むことだけ</b>です。</p>
       <a class="btn" href="https://ig.me/m/mieru.jugyo" target="_blank" rel="noopener">無料サンプル動画を頼む <span class="arr">↗</span></a>
