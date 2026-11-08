@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>見える授業 — 塾・教室・講師のショート動画おまかせ運用｜無料サンプル1本</title>
+<meta name="description" content="塾・教室・講師のInstagramショート動画を、ネタ出し・制作・投稿・数字の振り返りまでAIでまるごと代行。顔出し・撮影なし。先生がやるのは月1回レポートを読むだけ。まずは無料サンプル動画1本から。" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://dotdelibiz-hue.github.io/mieru-jugyo/" />
+<meta property="og:title" content="「発信しなきゃ」は、今日で終わりに。— 見える授業" />
+<meta property="og:description" content="塾・教室・講師のショート動画を、ネタ出しから投稿・改善までまるごと代行。まずは無料サンプル動画1本から。" />
+<meta name="twitter:card" content="summary" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7XHSCWV2CK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7XHSCWV2CK');
+</script>
+<style>
+  :root{
+    --bg:#fbfaf6;
+    --bg-2:#f4f0e6;
+    --card:#ffffff;
+    --ink:#221e19;
+    --ink-2:#5a554c;
+    --ink-3:#8a8376;
+    --line:#ddd7c9;
+    --line-soft:#e9e4d7;
+    --accent:#b1461d;
+    --accent-hover:#933a15;
+    --accent-wash:#f5e2d4;
+    --on-accent:#ffffff;
+    --screen:#1b1814;
+    --screen-2:#28231d;
+    --screen-ink:#f3efe6;
+    --screen-accent:#ef8a5a;
+    --shadow:0 1px 2px rgba(34,30,25,.05),0 12px 32px -16px rgba(34,30,25,.25);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#171512;
+      --bg-2:#1d1a16;
+      --card:#211e1a;
+      --ink:#ede9e0;
+      --ink-2:#bab3a5;
+      --ink-3:#8d8678;
+      --line:#38342c;
+      --line-soft:#2b2822;
+      --accent:#e58456;
+      --accent-hover:#ee9a71;
+      --accent-wash:#3a2417;
+      --on-accent:#1b120c;
+      --screen:#0f0d0b;
+      --screen-2:#1f1b17;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 16px 36px -18px rgba(0,0,0,.6);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  ::selection{background:var(--accent-wash)}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Zen Kaku Gothic New",-apple-system,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+    line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased;letter-spacing:.02em;
+    overflow-x:hidden;
+  }
+  @media(max-width:640px){body{padding-bottom:84px}}
+  a{color:var(--ink);text-decoration-color:var(--accent);text-underline-offset:4px;text-decoration-thickness:1px}
+  a:hover{color:var(--accent)}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+  b,strong{font-weight:700}
+  .mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums;letter-spacing:0}
+  .serif{font-family:"Shippori Mincho B1","Hiragino Mincho ProN",serif}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  .hl{background:linear-gradient(transparent 60%,var(--accent-wash) 60%);padding:0 .1em}
+
+  /* ---------- top bar ---------- */
+  .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;font-size:16px;letter-spacing:.06em}
+  .brand-mark{width:26px;height:26px}
+  .brand-mark path{fill:none;stroke:var(--accent);stroke-width:2.2;stroke-linejoin:round}
+  .top-note{font-size:12px;color:var(--ink-3)}
+
+  /* ---------- buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    min-height:58px;padding:14px 30px;border-radius:14px;
+    background:var(--accent);color:var(--on-accent);
+    font-weight:700;font-size:17px;letter-spacing:.04em;line-height:1.4;text-decoration:none;text-align:center;
+    box-shadow:0 1px 0 rgba(0,0,0,.06),0 10px 24px -12px var(--accent);
+    transition:background .15s ease,transform .15s ease,box-shadow .15s ease;
+  }
+  .btn:hover{background:var(--accent-hover);color:var(--on-accent);transform:translateY(-1px)}
+  .btn:active{transform:translateY(0)}
+  .btn .arr{font-size:.95em;transition:transform .15s ease}
+  .btn:hover .arr{transform:translate(2px,-2px)}
+  .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line);box-shadow:none}
+  .btn.ghost:hover{border-color:var(--accent);color:var(--accent);background:transparent}
+  .btn.block{display:flex;width:100%}
+  @media(max-width:640px){.hero .btn{display:flex;width:100%}}
+
+  /* ---------- hero ---------- */
+  .hero{padding:28px 0 72px}
+  .hero-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:56px;align-items:center}
+  @media(max-width:880px){.hero-grid{grid-template-columns:1fr;gap:44px}}
+  .eyebrow{
+    display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px 10px;
+    font-size:13px;font-weight:700;color:var(--accent);
+    background:var(--accent-wash);padding:6px 14px;border-radius:999px;line-height:1.6
+  }
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
+  h1{
+    font-family:"Shippori Mincho B1","Hiragino Mincho ProN",serif;font-weight:800;
+    font-size:clamp(38px,7.2vw,66px);line-height:1.28;letter-spacing:.01em;margin:22px 0 22px;
+    text-wrap:balance
+  }
+  h1 .q{color:var(--accent)}
+  .lead{font-size:clamp(16px,2.1vw,18.5px);color:var(--ink-2);margin:0 0 30px;max-width:33em}
+  .lead b{color:var(--ink)}
+  .reassure{list-style:none;display:flex;flex-wrap:wrap;gap:6px 20px;padding:0;margin:16px 0 0;font-size:14px;color:var(--ink-2)}
+  .reassure li::before{content:"✓";color:var(--accent);font-weight:900;margin-right:6px}
+  .proofbar{
+    margin-top:34px;padding-top:22px;border-top:1px solid var(--line);
+    display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:8px 32px
+  }
+  .proofbar .n{font-family:"IBM Plex Mono",ui-monospace,monospace;font-weight:600;font-size:clamp(20px,3vw,26px);line-height:1.2;letter-spacing:0}
+  .proofbar .n small{font-family:"Zen Kaku Gothic New",sans-serif;font-size:13px;font-weight:700;margin-left:2px}
+  .proofbar .c{font-size:12px;color:var(--ink-3);line-height:1.5}
+  .proofbar-src{grid-column:1/-1;font-size:12px;color:var(--ink-3);margin-top:4px}
+  @media(max-width:520px){.proofbar{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 14px}}
+
+  /* phone mock */
+  .stage{position:relative;display:flex;justify-content:center}
+  .phone{
+    position:relative;width:min(290px,76vw);aspect-ratio:9/18;
+    background:var(--screen);border-radius:40px;padding:11px;
+    box-shadow:0 0 0 1px rgba(255,255,255,.06) inset,0 30px 60px -28px rgba(34,30,25,.55);
+    transform:rotate(2deg)
+  }
+  .screen{
+    height:100%;border-radius:30px;overflow:hidden;position:relative;
+    background:radial-gradient(120% 70% at 50% 18%,var(--screen-2),var(--screen) 70%);
+    color:var(--screen-ink);display:flex;flex-direction:column;padding:26px 18px 18px
+  }
+  .notch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:84px;height:22px;border-radius:12px;background:#000}
+  .scr-user{display:flex;align-items:center;gap:8px;font-size:11.5px;opacity:.8;margin-top:10px}
+  .scr-user i{width:20px;height:20px;border-radius:50%;background:var(--screen-accent);display:block}
+  .scr-title{font-family:"Shippori Mincho B1",serif;font-weight:800;font-size:19px;line-height:1.45;margin:16px 0 6px}
+  .scr-fig{flex:1;display:flex;align-items:center;justify-content:center}
+  .scr-fig svg{width:100%;max-width:220px;height:auto;overflow:visible}
+  .t-body{fill:none;stroke:var(--screen-ink);stroke-width:2.2;stroke-linejoin:round}
+  .t-aux{stroke:var(--screen-accent);stroke-width:2;stroke-dasharray:140;stroke-dashoffset:140;animation:draw 1.1s .5s ease-out forwards}
+  .t-arc{fill:none;stroke:var(--screen-accent);stroke-width:2;opacity:0;animation:fade .5s 1.5s ease forwards}
+  .t-lab{fill:var(--screen-ink);font:600 13px "IBM Plex Mono",monospace;opacity:0;animation:fade .5s 1.7s ease forwards}
+  .t-sum{fill:var(--screen-accent);font:700 15px "IBM Plex Mono",monospace;opacity:0;animation:fade .5s 2.1s ease forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes fade{to{opacity:1}}
+  .scr-stats{display:flex;gap:14px;font-size:12px;border-top:1px solid rgba(255,255,255,.12);padding-top:12px}
+  .scr-stats b{font-family:"IBM Plex Mono",monospace;font-size:15px;display:block;line-height:1.3}
+  .scr-stats span{opacity:.7}
+  .badge{
+    position:absolute;left:max(0px,calc(50% - 210px));bottom:46px;
+    background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:14px;
+    padding:10px 14px;font-size:12.5px;line-height:1.5;box-shadow:var(--shadow);transform:rotate(-3deg)
+  }
+  .badge b{display:block;font-size:14px}
+  .badge .mono{color:var(--accent);font-weight:600}
+  @media(max-width:520px){.badge{left:0;bottom:24px}}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .t-aux{animation:none;stroke-dashoffset:0}
+    .t-arc,.t-lab,.t-sum{animation:none;opacity:1}
+    .btn,.btn .arr{transition:none}
+  }
+
+  /* ---------- sections ---------- */
+  section{padding:92px 0;border-top:1px solid var(--line-soft)}
+  section.tint{background:var(--bg-2)}
+  @media(max-width:640px){section{padding:68px 0}}
+  .sec-head{max-width:720px;margin-bottom:44px}
+  .sec-no{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;color:var(--accent);letter-spacing:.12em;display:block;margin-bottom:12px}
+  h2{
+    font-family:"Shippori Mincho B1","Hiragino Mincho ProN",serif;font-weight:800;
+    font-size:clamp(26px,4.4vw,38px);line-height:1.45;letter-spacing:.01em;margin:0 0 16px;text-wrap:balance
+  }
+  .sec-head p{color:var(--ink-2);margin:0;font-size:16.5px}
+  h3{font-size:17.5px;line-height:1.55;margin:0 0 6px;font-weight:700}
+
+  /* pain */
+  .pains{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  @media(max-width:720px){.pains{grid-template-columns:1fr}}
+  .pains li{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px 20px 56px;position:relative;color:var(--ink-2)}
+  .pains li::before{content:"";position:absolute;left:22px;top:26px;width:18px;height:18px;border-radius:5px;border:2px solid var(--ink-3)}
+  .pains li b{color:var(--ink);display:block;margin-bottom:2px}
+  .turn{margin:40px 0 0;font-family:"Shippori Mincho B1",serif;font-weight:800;font-size:clamp(20px,3vw,26px);line-height:1.6;max-width:30em}
+
+  /* loop */
+  .loop{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;counter-reset:lp}
+  .loop li{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 16px 20px;position:relative}
+  .loop li:not(:last-child)::after{content:"→";position:absolute;right:-12px;top:22px;width:12px;text-align:center;color:var(--accent);font-weight:700;z-index:1}
+  .loop .k{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--accent);font-weight:600}
+  .loop h3{font-size:16.5px;margin:4px 0 4px}
+  .loop p{font-size:14px;color:var(--ink-2);margin:0;line-height:1.7}
+  .loop-back{display:flex;align-items:center;gap:10px;margin:14px 0 0;font-size:14px;color:var(--ink-2)}
+  .loop-back .mono{color:var(--accent);font-size:18px}
+  @media(max-width:900px){
+    .loop{grid-template-columns:1fr;gap:10px}
+    .loop li{display:grid;grid-template-columns:44px 1fr;column-gap:8px;padding:16px 18px}
+    .loop li .k{grid-row:span 2;padding-top:3px}
+    .loop li:not(:last-child)::after{content:"↓";right:auto;left:30px;top:auto;bottom:-17px}
+  }
+  .split{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:14px;margin-top:40px}
+  @media(max-width:720px){.split{grid-template-columns:1fr}}
+  .split > div{border-radius:18px;padding:24px 26px}
+  .you{border:1.5px dashed var(--line);background:transparent}
+  .us{background:var(--ink);color:var(--bg)}
+  .split .tag{font-size:12.5px;font-weight:700;letter-spacing:.08em;display:block;margin-bottom:10px}
+  .you .tag{color:var(--ink-3)}
+  .us .tag{color:var(--accent)}
+  .split ul{list-style:none;margin:0;padding:0}
+  .split li{padding:7px 0 7px 26px;position:relative;line-height:1.65}
+  .split li::before{content:"";position:absolute;left:2px;top:15px;width:12px;height:2px;background:currentColor;opacity:.5}
+  .us li::before{content:"✓";background:none;width:auto;height:auto;top:7px;opacity:1;color:var(--accent);font-weight:900}
+  .split .big{font-family:"Shippori Mincho B1",serif;font-weight:800;font-size:22px;line-height:1.5;margin:0 0 8px}
+  .split .small{font-size:13px;opacity:.75;margin:10px 0 0}
+
+  /* proof */
+  .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+  @media(max-width:720px){.stats{grid-template-columns:1fr}}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 24px}
+  .stat .num{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:clamp(34px,5vw,46px);line-height:1.15;letter-spacing:-.01em}
+  .stat .num small{font-family:"Zen Kaku Gothic New",sans-serif;font-size:16px;font-weight:700;margin-left:4px;letter-spacing:0}
+  .stat .cap{font-size:14px;color:var(--ink-2);margin-top:6px;line-height:1.6}
+  .stat.top{border-color:var(--accent);background:linear-gradient(180deg,var(--accent-wash),var(--card) 70%)}
+  .stat.top .num{color:var(--accent)}
+  .why{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center;margin-top:36px}
+  @media(max-width:720px){.why{grid-template-columns:1fr}}
+  .why p{margin:0 0 12px;color:var(--ink-2)}
+  .why p b{color:var(--ink)}
+  .note{font-size:12.5px;color:var(--ink-3);line-height:1.75;margin:28px 0 0}
+
+  /* compare */
+  .cmp{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card)}
+  .cmp-row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.9fr) minmax(0,1.3fr);gap:16px;padding:18px 24px;border-top:1px solid var(--line-soft);align-items:center}
+  .cmp-row:first-child{border-top:0}
+  .cmp-head{font-size:12.5px;color:var(--ink-3);font-weight:700;letter-spacing:.06em;padding-top:14px;padding-bottom:14px;background:var(--bg-2)}
+  .cmp-row .name{font-weight:700}
+  .cmp-row .cost{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:15px}
+  .cmp-row .cost small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;font-size:12px;color:var(--ink-3);display:block}
+  .cmp-row .eff{color:var(--ink-2);font-size:14.5px;line-height:1.65}
+  .cmp-row.me{background:var(--accent-wash);position:relative}
+  .cmp-row.me .name,.cmp-row.me .cost{color:var(--accent)}
+  .cmp-row.me .eff{color:var(--ink);font-weight:700}
+  .lbl{display:none}
+  @media(max-width:720px){
+    .cmp-head{display:none}
+    .cmp-row{grid-template-columns:1fr 1fr;gap:4px 16px;padding:16px 18px}
+    .cmp-row .name{grid-column:1/-1;margin-bottom:4px}
+    .lbl{display:block;font-size:11.5px;color:var(--ink-3);font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif}
+  }
+  .because{margin:24px 0 0;padding:20px 24px;border-left:3px solid var(--accent);background:var(--card);border-radius:0 14px 14px 0;color:var(--ink-2)}
+  .because b{color:var(--ink)}
+
+  /* pricing */
+  .plans{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.15fr) minmax(0,.95fr);gap:16px;align-items:stretch}
+  @media(max-width:900px){.plans{grid-template-columns:1fr}}
+  .plan{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px 26px;display:flex;flex-direction:column}
+  .plan .pname{font-weight:900;font-size:15px;letter-spacing:.06em;margin:0 0 4px}
+  .plan .pfor{font-size:13.5px;color:var(--ink-2);margin:0 0 18px;line-height:1.6}
+  .price{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:40px;line-height:1.1;letter-spacing:-.01em;margin:0}
+  .price small{font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;font-weight:700;margin-left:4px;letter-spacing:0}
+  .price .per{font-family:"Zen Kaku Gothic New",sans-serif;font-size:14px;font-weight:700;margin-right:2px}
+  .was{font-size:13.5px;color:var(--ink-3);margin:0 0 4px}
+  .was s{text-decoration-thickness:1.5px}
+  .unit{font-size:13px;color:var(--ink-3);margin:6px 0 0}
+  .plan ul{list-style:none;padding:18px 0 0;margin:18px 0 22px;border-top:1px solid var(--line-soft);flex:1}
+  .plan li{padding:5px 0 5px 24px;position:relative;font-size:14.5px;line-height:1.65}
+  .plan li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:900}
+  .plan li.cond::before{content:"※";color:var(--ink-3);font-weight:500}
+  .plan li.cond{color:var(--ink-2);font-size:13.5px}
+  .plan.feat{border:2px solid var(--accent);box-shadow:var(--shadow);position:relative;padding-top:38px}
+  .ribbon{position:absolute;top:-14px;left:24px;background:var(--accent);color:var(--on-accent);font-size:12.5px;font-weight:700;letter-spacing:.06em;padding:4px 14px;border-radius:999px}
+  @media(max-width:900px){.plan.feat{order:-1;margin-top:10px}}
+  .buyout{margin:22px 0 0;padding:18px 22px;border:1px dashed var(--line);border-radius:14px;font-size:14px;color:var(--ink-2)}
+  .buyout b{color:var(--ink)}
+  .terms{display:flex;flex-wrap:wrap;gap:8px 22px;list-style:none;padding:0;margin:18px 0 0;font-size:13.5px;color:var(--ink-2)}
+  .terms li::before{content:"●";color:var(--accent);font-size:8px;vertical-align:middle;margin-right:8px}
+
+  /* flow */
+  .steps{list-style:none;padding:0;margin:0;max-width:760px}
+  .steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;position:relative;padding-bottom:28px}
+  .steps li:not(:last-child)::before{content:"";position:absolute;left:23px;top:46px;bottom:4px;width:2px;background:var(--line)}
+  .sn{width:48px;height:48px;border-radius:50%;border:2px solid var(--accent);color:var(--accent);display:grid;place-items:center;font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:17px;background:var(--bg)}
+  .steps li.pay .sn{background:var(--accent);color:var(--on-accent)}
+  .steps h3{margin-top:9px}
+  .steps p{margin:0;color:var(--ink-2);font-size:15px}
+  .chip{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.04em;padding:1px 10px;border-radius:999px;margin-left:10px;vertical-align:2px;background:var(--accent-wash);color:var(--accent)}
+  .chip.paid{background:var(--ink);color:var(--bg)}
+
+  /* faq */
+  .faq{max-width:780px;border-top:1px solid var(--line)}
+  .faq details{border-bottom:1px solid var(--line)}
+  .faq summary{list-style:none;cursor:pointer;padding:20px 44px 20px 0;font-weight:700;font-size:16.5px;position:relative;line-height:1.6}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::before{content:"Q";font-family:"IBM Plex Mono",monospace;color:var(--accent);margin-right:12px}
+  .faq summary::after{content:"+";position:absolute;right:6px;top:16px;font-size:24px;font-weight:400;color:var(--ink-3);transition:transform .2s}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq details p{margin:0 0 22px;padding-left:26px;color:var(--ink-2)}
+
+  /* contact */
+  .contact{
+    margin:0 auto;max-width:860px;text-align:center;
+    background:var(--ink);color:var(--bg);border-radius:28px;padding:64px 28px 56px;position:relative;overflow:hidden
+  }
+  .contact::before{content:"";position:absolute;inset:auto -10% -60% -10%;height:90%;background:radial-gradient(closest-side,rgba(229,132,86,.28),transparent);pointer-events:none}
+  .contact > *{position:relative}
+  .contact .k{font-family:"IBM Plex Mono",monospace;font-size:12.5px;letter-spacing:.14em;color:var(--accent);font-weight:600}
+  .contact h2{color:var(--bg);margin:12px 0 16px}
+  .contact p{color:var(--bg);opacity:.82;max-width:30em;margin:0 auto 30px}
+  .contact .btn{min-height:62px;font-size:18px;padding:16px 34px}
+  @media(max-width:640px){.contact{border-radius:22px;padding:52px 20px 44px}.contact .btn{display:flex;width:100%}}
+  .contact .sub{margin:18px 0 0;font-size:13.5px;opacity:.75}
+  .contact .sub a{color:var(--bg)}
+  .contact-wrap{padding:24px 0 96px}
+
+  footer{border-top:1px solid var(--line-soft);padding:28px 0 36px;font-size:12.5px;color:var(--ink-3)}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px}
+
+  /* sticky (mobile) */
+  .sticky-cta{display:none}
+  @media(max-width:640px){
+    .sticky-cta{
+      display:block;position:fixed;left:0;right:0;bottom:0;z-index:20;
+      padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+      background:color-mix(in srgb,var(--bg) 88%,transparent);
+      -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+      border-top:1px solid var(--line)
+    }
+    .sticky-cta a{
+      display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;border-radius:14px;
+      background:var(--accent);color:var(--on-accent);font-weight:700;font-size:16px;text-decoration:none;letter-spacing:.04em
+    }
+    .sticky-cta a small{font-weight:500;font-size:12px;opacity:.85}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#">
+      <svg class="brand-mark" viewBox="0 0 26 26" aria-hidden="true"><path d="M3 22 L23 22 L13 4 Z"/></svg>
+      見える授業
+    </a>
+    <span class="top-note mono">@mieru.jugyo</span>
+  </header>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>塾・教室・講師のための ショート動画おまかせ運用</span>
+      <h1><span class="q">「発信しなきゃ」</span>は、<br>今日で終わりに。</h1>
+      <p class="lead">ネタ出し、動画づくり、投稿、数字の振り返り、次の改善。教室のショート動画を、<b>AIと私がまるごと引き受けます。</b>先生がやるのは、<b>月に一度レポートを読むことだけ</b>です。</p>
+      <a class="btn" href="https://ig.me/m/mieru.jugyo" target="_blank" rel="noopener">無料サンプル動画を頼む <span class="arr">↗</span></a>
+      <ul class="reassure">
+        <li>費用0円・DMで1分</li>
+        <li>見送ってOK・営業電話なし</li>
+        <li>顔出し・撮影なし</li>
+      </ul>
+      <div class="proofbar">
+        <div><div class="n">75,304<small>回</small></div><div class="c">最大ヒット 7日間の再生</div></div>
+        <div><div class="n">24.4<small>万回</small></div><div class="c">計測済み29本の累計</div></div>
+        <div><div class="n">3,083<small>人</small></div><div class="c">フォロワー（66投稿時点）</div></div>
+        <div class="proofbar-src">この運用で回している自分のアカウント @mieru.jugyo の実績です</div>
+      </div>
+    </div>
+
+    <div class="stage" aria-hidden="true">
+      <div class="phone">
+        <div class="screen">
+          <div class="notch"></div>
+          <div class="scr-user"><i></i><span class="mono">mieru.jugyo</span></div>
+          <div class="scr-title">三角形の角を足すと、<br>なぜ180°？</div>
+          <div class="scr-fig">
+            <svg viewBox="0 0 240 160">
+              <line class="t-aux" x1="50" y1="30" x2="190" y2="30"/>
+              <polygon class="t-body" points="28,130 212,130 120,30"/>
+              <path class="t-arc" d="M54 130 A26 26 0 0 0 46 111"/>
+              <path class="t-arc" d="M186 130 A26 26 0 0 1 194 111"/>
+              <path class="t-arc" d="M104 48 A24 24 0 0 0 136 48"/>
+              <text class="t-lab" x="58" y="122">a</text>
+              <text class="t-lab" x="172" y="122">b</text>
+              <text class="t-lab" x="115" y="70">c</text>
+              <text class="t-sum" x="62" y="156">a + b + c = 180°</text>
+            </svg>
+          </div>
+          <div class="scr-stats">
+            <div><b>75,304</b><span>回再生 / 7日</span></div>
+            <div><b>799</b><span>保存</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="badge"><b>補助線1本で「なぜ」が見える</b>いちばん伸びた動画の型 <span class="mono">#1</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- PAIN -->
+<section class="tint" id="pain">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">01 — こんな状態、続いていませんか</span>
+      <h2>発信の大切さは、<br>もう十分わかっている。</h2>
+    </div>
+    <ul class="pains">
+      <li><b>授業と準備で、手が回らない</b>SNSで発信した方がいいのは分かっている。でも、気づけば1ヶ月投稿していない。</li>
+      <li><b>何を出せば伸びるのか、分からない</b>たまに投稿しても反応が薄く、正解が分からないまま手が止まっている。</li>
+      <li><b>運用代行は、小さな教室には重い</b>調べてみたら月5万円〜。毎月払い続けるには勇気がいる。</li>
+      <li><b>AIツールを入れても、結局は自分で考える</b>「何を作るか」「いつ出すか」「なぜ伸びなかったか」は、自分の仕事のまま。</li>
+    </ul>
+    <p class="turn">足りないのは、やる気でもツールでもありません。<br><span class="hl">考えて、作って、出して、振り返る「手」</span>です。</p>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">02 — おまかせ運用でやること</span>
+      <h2>その「手」を、まるごと引き受けます。</h2>
+      <p>出して終わりにはしません。数字を見て、伸びた型を次の動画に引き継ぐ。この5つを毎月、こちらで回し続けます。</p>
+    </div>
+    <ol class="loop">
+      <li><span class="k">01</span><div><h3>ネタ出し</h3><p>教室の科目と、過去の反応から「伸びる問い」を選ぶ</p></div></li>
+      <li><span class="k">02</span><div><h3>動画づくり</h3><p>台本・図解・動きまで。30秒前後のショートに</p></div></li>
+      <li><span class="k">03</span><div><h3>投稿</h3><p>決めたペースで、こちらから出し続ける</p></div></li>
+      <li><span class="k">04</span><div><h3>数字の振り返り</h3><p>再生・保存・フォローを1本ずつ計測</p></div></li>
+      <li><span class="k">05</span><div><h3>次へ反映</h3><p>伸びた型を残し、伸びなかった理由を直す</p></div></li>
+    </ol>
+    <p class="loop-back"><span class="mono">↻</span>05 から 01 へ。回すほど、あなたの教室に合った型が磨かれていきます。</p>
+
+    <div class="split">
+      <div class="you">
+        <span class="tag">先生がやること</span>
+        <p class="big">月に一度、<br>レポートを読むだけ。</p>
+        <ul>
+          <li>最初に、教室と科目のことを少し教える（DMでOK）</li>
+          <li>月1回のレポートに目を通す</li>
+          <li>扱ってほしいテーマがあれば、一言送る（任意）</li>
+        </ul>
+      </div>
+      <div class="us">
+        <span class="tag">こちらがやること</span>
+        <ul>
+          <li>教室に合わせた動画の「型」の設計</li>
+          <li>毎週のネタ出し・台本・図解・動画づくり</li>
+          <li>投稿（パスワードを預からない方法を優先）</li>
+          <li>1本ごとの数字の計測と、伸びた理由の分析</li>
+          <li>次の動画への反映と、月1回のレポート</li>
+        </ul>
+        <p class="small">顔出し・撮影は不要です。授業の「なぜ」を、動く図解で見せます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="tint" id="proof">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">03 — 実績</span>
+      <h2>まず、自分のアカウントで<br>証明しました。</h2>
+      <p>数学・理科の「なぜ」を30秒の動く図で解くInstagram <a href="https://www.instagram.com/mieru.jugyo" target="_blank" rel="noopener">見える授業 @mieru.jugyo</a> は、この運用の仕組みそのもので回しています。</p>
+    </div>
+    <div class="stats">
+      <div class="stat top"><div class="num">75,304<small>回</small></div><div class="cap">最大ヒット作の7日間の再生数<br>（保存799件）</div></div>
+      <div class="stat"><div class="num">約24.4<small>万回</small></div><div class="cap">計測済み29本の累計再生数</div></div>
+      <div class="stat"><div class="num">3,083<small>人</small></div><div class="cap">フォロワー数<br>（投稿66本の時点）</div></div>
+    </div>
+    <div class="why">
+      <div>
+        <p><b>いちばん伸びたのは「三角形の角を足すと、なぜ180°？」。</b>補助線を1本引くだけで、理由が目に見える。そんな「わかった！」の瞬間を30秒に詰めた1本です。</p>
+        <p>当たったのは偶然ではありません。投稿ごとに再生と保存を測り、<b>伸びた型を次の動画に引き継ぐ</b>。その積み重ねで数字が伸びてきました。</p>
+        <p>同じ循環を、あなたの教室・科目で回します。</p>
+      </div>
+      <div class="stat" style="padding:0;overflow:hidden">
+        <svg viewBox="0 0 320 170" role="img" aria-label="投稿ごとに計測し、伸びた型を次に引き継ぐ循環の図" style="display:block;width:100%;height:auto">
+          <g font-family="Zen Kaku Gothic New, sans-serif" font-size="13" font-weight="700" fill="currentColor">
+            <rect x="20" y="24" width="120" height="44" rx="10" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+            <text x="80" y="51" text-anchor="middle">投稿する</text>
+            <rect x="180" y="24" width="120" height="44" rx="10" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+            <text x="240" y="51" text-anchor="middle">数字を測る</text>
+            <rect x="180" y="104" width="120" height="44" rx="10" fill="none" stroke="var(--accent)" stroke-width="2"/>
+            <text x="240" y="131" text-anchor="middle" fill="var(--accent)">伸びた型を残す</text>
+            <rect x="20" y="104" width="120" height="44" rx="10" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+            <text x="80" y="131" text-anchor="middle">次の動画に反映</text>
+          </g>
+          <g fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M144 46 H174"/><path d="M168 40 L174 46 L168 52"/>
+            <path d="M240 72 V98"/><path d="M234 92 L240 98 L246 92"/>
+            <path d="M176 126 H146"/><path d="M152 120 L146 126 L152 132"/>
+            <path d="M80 100 V74"/><path d="M74 80 L80 74 L86 80"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <p class="note">※ 数字は @mieru.jugyo の投稿計測データ（2026年11月5日時点／最大ヒット作の7日計測は11月6日更新）です。再生数は投稿後72時間・7日時点の計測値です。同じ再生数を保証するものではありません。</p>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section id="compare">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">04 — ほかの方法との違い</span>
+      <h2>お金を払っても手間が残るか、<br>手間ごと手放すか。</h2>
+    </div>
+    <div class="cmp" role="table" aria-label="ほかの方法との比較">
+      <div class="cmp-row cmp-head" role="row"><div role="columnheader">方法</div><div role="columnheader">費用の目安</div><div role="columnheader">先生に残る手間</div></div>
+      <div class="cmp-row" role="row"><div class="name" role="cell">AI動画ツールを自分で使う</div><div class="cost" role="cell"><span class="lbl">費用の目安</span>月 数千円〜</div><div class="eff" role="cell"><span class="lbl">残る手間</span>ネタ出し・制作・投稿・分析のすべて</div></div>
+      <div class="cmp-row" role="row"><div class="name" role="cell">動画編集だけ外注する</div><div class="cost" role="cell"><span class="lbl">費用の目安</span>1本 3,000〜15,000円</div><div class="eff" role="cell"><span class="lbl">残る手間</span>ネタ出し・投稿・分析</div></div>
+      <div class="cmp-row" role="row"><div class="name" role="cell">SNS運用代行に頼む</div><div class="cost" role="cell"><span class="lbl">費用の目安</span>月 5万〜10万円以上</div><div class="eff" role="cell"><span class="lbl">残る手間</span>ほぼなし</div></div>
+      <div class="cmp-row me" role="row"><div class="name" role="cell">見える授業 おまかせ運用</div><div class="cost" role="cell"><span class="lbl">費用の目安</span>月 29,800円<small>1本あたり約2,480円</small></div><div class="eff" role="cell"><span class="lbl">残る手間</span>月1回、レポートを読むだけ</div></div>
+    </div>
+    <p class="because"><b>なぜこの価格でできるのか。</b>「教える」動画に絞って、伸びる型と制作の仕組みをAIで作り込んでいるからです。教室ごとにゼロから作らないぶん、運用代行の半額以下で続けられます。</p>
+    <p class="note">※ ほかの方法の費用は、一般的な相場の目安です（2026年11月時点の各社公開情報より）。</p>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="tint" id="price">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">05 — 料金</span>
+      <h2>まずは無料の1本から。<br>続けるかは、見てから決めてください。</h2>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <p class="pname">無料サンプル</p>
+        <p class="pfor">まずは仕上がりを見たい方に</p>
+        <p class="price">0<small>円</small></p>
+        <ul>
+          <li>あなたの教室・科目に合わせた動画を1本</li>
+          <li>実際に使える仕上がりと「型」を確認</li>
+          <li>見送りでも費用はかかりません</li>
+        </ul>
+        <a class="btn ghost block" href="https://ig.me/m/mieru.jugyo" target="_blank" rel="noopener">無料サンプルを頼む <span class="arr">↗</span></a>
+      </div>
+
+      <div class="plan feat">
+        <span class="ribbon">いま募集中｜先着5教室</span>
+        <p class="pname">モニター枠</p>
+        <p class="pfor">事例づくりに協力いただける教室に、通常より安くご提供します</p>
+        <p class="was">通常 <s>月29,800円</s></p>
+        <p class="price"><span class="per">月</span>19,800<small>円（税込）</small></p>
+        <p class="unit">1本あたり約1,650円・初期費用0円</p>
+        <ul>
+          <li>ショート動画 月12本（週3本ペース）</li>
+          <li>ネタ出し・台本・図解・動画づくり</li>
+          <li>投稿まで、こちらで対応</li>
+          <li>月1回の数字レポートと改善</li>
+          <li>完成した動画は先生のもの。解約後も自由に使えます</li>
+          <li class="cond">3ヶ月続けていただくことが条件です</li>
+          <li class="cond">成果を事例として紹介させてください（教室名は伏せられます）</li>
+        </ul>
+        <a class="btn block" href="https://ig.me/m/mieru.jugyo" target="_blank" rel="noopener">モニター枠について聞く <span class="arr">↗</span></a>
+      </div>
+
+      <div class="plan">
+        <p class="pname">おまかせ運用</p>
+        <p class="pfor">通常のプランです</p>
+        <p class="price"><span class="per">月</span>29,800<small>円（税込）</small></p>
+        <p class="unit">1本あたり約2,480円・初期費用0円</p>
+        <ul>
+          <li>ショート動画 月12本（週3本ペース）</li>
+          <li>ネタ出しから投稿・改善まで、すべて込み</li>
+          <li>月1回の数字レポート</li>
+          <li>完成した動画は先生のもの</li>
+          <li>1ヶ月ごとの契約。翌月分から止められます</li>
+        </ul>
+        <a class="btn ghost block" href="https://ig.me/m/mieru.jugyo" target="_blank" rel="noopener">DMで相談する <span class="arr">↗</span></a>
+      </div>
+    </div>
+    <ul class="terms">
+      <li>お支払いは、サンプルを見てお申し込みいただいてから</li>
+      <li>初期費用なし</li>
+      <li>あとから増える請求はありません</li>
+    </ul>
+    <p class="buyout"><b>仕組みごと買い取りたい方へ。</b>教室専用の動画づくりの仕組み一式を構築してお渡しすることもできます（300,000円〜・個別にお見積もり）。ほとんどの教室では、月額の方が負担は小さくなります。</p>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section id="flow">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">06 — 始めるまで</span>
+      <h2>お金がかかるのは、<br>サンプルを見て決めたあとだけ。</h2>
+    </div>
+    <ol class="steps">
+      <li><span class="sn">1</span><div><h3>DMで「サンプル」と送る<span class="chip">無料</span></h3><p>InstagramのDMに一言送るだけ。1分で終わります。</p></div></li>
+      <li><span class="sn">2</span><div><h3>教室のことを少し伺う<span class="chip">無料</span></h3><p>科目・対象の学年・伝えたいことを、DMで簡単にお聞きします。</p></div></li>
+      <li><span class="sn">3</span><div><h3>無料サンプル動画をお届け<span class="chip">無料</span></h3><p>あなたの教室向けに作った1本をお渡しします。仕上がりと「型」を確かめてください。</p></div></li>
+      <li class="pay"><span class="sn">4</span><div><h3>見てから決める</h3><p>続けたいと思えたら、プランを選んでお申し込み。ここで初めてお支払いが発生します。見送りなら、費用ゼロでそのまま終わりです。</p></div></li>
+      <li><span class="sn">5</span><div><h3>毎週の投稿がスタート<span class="chip paid">月額</span></h3><p>あとはこちらで回し続けます。月に一度、数字と次の改善をレポートでお届けします。</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="tint" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-no">07 — よくある質問</span>
+      <h2>気になるところに、先にお答えします。</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>サンプルは本当に無料ですか？</summary>
+        <p>はい。あなたの教室・科目に合わせた動画1本を無料で作ります。見て合わないと思えば、そこで終わりで大丈夫です。費用もかかりませんし、しつこい営業もしません。</p>
+      </details>
+      <details>
+        <summary>顔出しや撮影は必要ですか？</summary>
+        <p>必要ありません。授業の「なぜ」を、動く図解の動画で見せます。先生の写真や声を入れたい場合は、ご相談ください。</p>
+      </details>
+      <details>
+        <summary>どんな教室・科目でも大丈夫ですか？</summary>
+        <p>塾・習い事の教室・資格や語学の講師など、「教える」お仕事がいちばん得意です。続けて伸ばせるテーマかどうかは、サンプルの段階で正直にお伝えします。合わないと判断した場合は、その理由もお伝えします。</p>
+      </details>
+      <details>
+        <summary>再生数や生徒数は保証されますか？</summary>
+        <p>保証はできません。ただ、投稿して終わりではなく、1本ごとの数字を見て次の動画に反映する仕組みなので、回すほど教室に合った型に近づいていきます。実例は上の @mieru.jugyo の数字をご覧ください。</p>
+      </details>
+      <details>
+        <summary>投稿はどうやってもらうのですか？</summary>
+        <p>始める前に、一緒に決めます。パスワードをお預かりしない方法（Instagramの権限の付与など）を優先します。</p>
+      </details>
+      <details>
+        <summary>途中でやめられますか？</summary>
+        <p>おまかせ運用は1ヶ月ごとの契約で、翌月分から止められます。モニター枠のみ、事例づくりのため3ヶ月続けていただくことが条件です。作った動画は、やめたあとも先生のものとして自由に使えます。</p>
+      </details>
+      <details>
+        <summary>追加料金はかかりますか？</summary>
+        <p>月額にすべて含まれています。本数を増やすなど内容を変えたい場合は、先にお見積もりをお出しします。同意なく請求が増えることはありません。</p>
+      </details>
+      <details>
+        <summary>仕組みごと買い取ることはできますか？</summary>
+        <p>できます。教室専用の動画づくりの仕組み一式を構築してお渡しする形で、300,000円〜の個別お見積もりです。ただ、ほとんどの教室では月額の方が負担は小さく済みます。まずはサンプルでご判断ください。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="contact-wrap">
+  <div class="wrap">
+    <div class="contact" id="contact">
+      <span class="k">FREE SAMPLE</span>
+      <h2>まずは無料で、<br>あなたの教室の1本を。</h2>
+      <p>InstagramのDMに「サンプル」と送るだけです。教室のことを少し伺って、あなた向けのサンプル動画をお返しします。モニター枠は先着5教室です。</p>
+      <a class="btn" href="https://ig.me/m/mieru.jugyo" target="_blank" rel="noopener">InstagramのDMで無料サンプルを頼む <span class="arr">↗</span></a>
+      <p class="sub">先に投稿を見てみる → <a href="https://www.instagram.com/mieru.jugyo" target="_blank" rel="noopener">@mieru.jugyo</a></p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>見える授業 — 塾・教室・講師のショート動画おまかせ運用</span>
+    <span>表示価格はすべて税込です</span>
+  </div>
+</footer>
+
+  <div class="sticky-cta">
+    <a href="https://ig.me/m/mieru.jugyo" target="_blank" rel="noopener">無料サンプルを頼む <small>DMで1分</small></a>
+  </div>
+
+<script>
+  // CTA click measurement for GA4: fires "cta_click" on every CTA on the page
+  // (hero button, contact / Instagram DM button, sticky bottom bar).
+  // CVR in GA4 = cta_click events (or users) / sessions.
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest ? e.target.closest('a.btn, .sticky-cta a') : null;
+    if (!link) return;
+    if (typeof gtag !== 'function') return;
+    var location = 'page';
+    if (link.closest('.sticky-cta')) location = 'sticky';
+    else if (link.closest('.contact')) location = 'contact';
+    else if (link.closest('.hero')) location = 'hero';
+    gtag('event', 'cta_click', {
+      cta_text: (link.textContent || '').replace(/\s+/g, ' ').trim(),
+      cta_location: location,
+      link_url: link.getAttribute('href') || ''
+    });
+  });
+</script>
+</body>
+</html>
