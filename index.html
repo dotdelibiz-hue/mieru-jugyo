@@ -118,9 +118,10 @@
   .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
   h1{
     font-family:"Shippori Mincho B1","Hiragino Mincho ProN",serif;font-weight:800;
-    font-size:clamp(38px,7.2vw,66px);line-height:1.28;letter-spacing:.01em;margin:22px 0 22px;
-    text-wrap:balance
+    font-size:clamp(27px,8.6vw,56px);line-height:1.3;letter-spacing:.01em;margin:22px 0 22px
   }
+  @media(min-width:881px){h1{font-size:clamp(40px,calc(6vw - 6px),56px)}}
+  h1 .nw{white-space:nowrap}
   h1 .q{color:var(--accent)}
   .lead{font-size:clamp(16px,2.1vw,18.5px);color:var(--ink-2);margin:0 0 30px;max-width:33em}
   .lead b{color:var(--ink)}
@@ -368,7 +369,7 @@
   <div class="wrap hero-grid">
     <div>
       <span class="eyebrow"><span class="dot"></span>塾・教室・講師のための ショート動画おまかせ運用</span>
-      <h1><span class="q">「発信しなきゃ」</span>は、<br>今日で終わりに。</h1>
+      <h1><span class="nw"><span class="q">「発信しなきゃ」</span>は、</span><br><span class="nw">今日で終わりに。</span></h1>
       <p class="lead">ネタ出し、動画づくり、投稿、数字の振り返り、次の改善。教室のショート動画を、<b>AIと私がまるごと引き受けます。</b>先生がやるのは、<b>月に一度レポートを読むことだけ</b>です。</p>
       <a class="btn" href="https://ig.me/m/mieru.jugyo" target="_blank" rel="noopener">無料サンプル動画を頼む <span class="arr">↗</span></a>
       <ul class="reassure">
